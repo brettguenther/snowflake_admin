@@ -1,4 +1,7 @@
 view: columns {
+
+
+
   sql_table_name: INFORMATION_SCHEMA.COLUMNS ;;
 
   dimension: character_maximum_length {
