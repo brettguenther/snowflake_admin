@@ -16,6 +16,8 @@ explore: query_history {
   description: "analyze query history"
 }
 
+# explore: test {}
+
 explore: tables {
   description: "explore table/column metadata"
   join: columns {
