@@ -13,6 +13,7 @@ include: "*.dashboard"
 # WAREHOUSE_METERING_HISTORY
 
 explore: query_history {
+
   description: "analyze query history"
   sql_always_where:  ${query_id} = 20;;
 }
@@ -20,7 +21,6 @@ explore: query_history {
 explore: tables {
 #   sql_always_where: ${tables.table_name} = 'test' ;;
   description: "explore table/column metadata"
-
   join: columns {
     sql_on: ${tables.table_schema} = ${columns.table_schema} and ${columns.table_name} = ${tables.table_name} and ${columns.table_catalog} = ${tables.table_catalog} and ;;
   }
