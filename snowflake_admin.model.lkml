@@ -13,11 +13,11 @@ include: "*.dashboard"
 # WAREHOUSE_METERING_HISTORY
 
 explore: query_history {
-  description: "analyze query history"
+#   description: "analyze query history"
 }
 
 explore: tables {
-  description: "explore table/column metadata"
+#   description: "explore table/column metadata"
   join: columns {
     sql_on: ${tables.table_schema} = ${columns.table_schema} and ${columns.table_name} = ${tables.table_name} and ${columns.table_catalog} = ${tables.table_catalog} and ;;
   }
